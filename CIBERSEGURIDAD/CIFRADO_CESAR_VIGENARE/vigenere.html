@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado vigenère</title>
+    <link href="index.css" rel="stylesheet " />
+</head>
+<body style ="background-color:#f1948a ;" >
+   
+    <div class="container">
+        <main>
+
+        <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <h1>Cifrado Vigenère</h1>
+        <hr>
+        <div class="datos">
+            <h3></h3>
+            <input type="text" id="txt" class="form-control" placeholder="Texto a cifrar o descifrar">
+            
+            <input type="text" id="txtclave" class="form-control" placeholder="Clave" onpaste="return false;" ondrop="return false;">
+            <br>
+            <button class="btn btn-info" onclick="cifrar()">Cifrar frase</button>
+            <button class="btn btn-info" onclick="descifrar()">Descifrar frase</button>
+            <button class="btn btn-danger" onclick="reiniciar()">Reiniciar campos</button>
+            <br>
+            <input type="text" id="respuesta" placeholder="Texto cifrado:" class="form-control" disabled>
+        </div>
+        <br>
+        <a href="index.html"><input type="button" id="button" name="return" value="Regresar"></a>
+    </div>
+
+   
+    <script src="vigenere.js"></script>
+
+</body>
+</html>

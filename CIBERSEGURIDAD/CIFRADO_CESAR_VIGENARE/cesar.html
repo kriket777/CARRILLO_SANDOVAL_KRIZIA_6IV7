@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    
+    <link href="index.css" rel="stylesheet " />
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Cifrador Cesar.</h1>
+        
+        <div class="col-md-12">
+            <div class="form-group">
+            <input id="texto" spellcheck="false" placeholder="Ingrese el texto" type="text" name="texto">
+            </div>
+        </div>
+       
+        <div class="col-md-12">
+            <div class="form-group">
+                
+                <input type="text" id="cifrado"  placeholder="Texto Cifrado"  name="cifrado" class="form-control" disabled="disabled">
+            </div>
+            
+        </div>
+        <div class="col-md-12">
+            <div class="rango">
+                <input id="desplazamiento" name="desplazamiento" type="range" step="1" value="10" min="1" max="25" oninput="this.nextElementSibling.value = this.value">
+                <output>10</output>
+            </div>
+        </div>
+        <br>
+        <a href="index.html"><input type="button" id="button" name="return" value="Regresar"></a>
+    </div>
+
+    
+    <script src="cesar.js"></script>
+
+</body>
+</html>
